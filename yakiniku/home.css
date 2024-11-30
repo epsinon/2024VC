@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+
+ul.ddmenu{
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+	background-color: #F4FA76;
+	font-size: 20px;
+}
+
+ul.ddmenu li{
+	width: 125px;
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+}
+
+ul.ddmenu a{
+	background-color: #F4FA76;
+	color: black;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
+
+ul.ddmenu a:hover{
+	background-color: #FDFFCB;
+	color: black;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.catchcopy {
+    font-size: 5em;
+    text-align: center;
+    line-height: 0.95em;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 
+        0 0 0.05em #FFF59D,
+        0 0 0.06em #FFF59D,
+        0 0 0.07em #FFF59D,
+        0 0 0.08em #FFF59D,
+        0 0 0.09em #FFF59D,
+        0 0 0.20em #FFF59D,
+        0 0 0.20em #FFF59D,
+        0 0 0.20em #FFF59D,
+        0 0 0.50em #FFF59D;
+}
+
+.text {
+    font-size: 2em;
+}
+
+body h2 {
+    font-size: 3em;
+    text-align: center;
+    line-height: 0.95em;
+    font-weight: bold;
+    color: transparent;
+    background: repeating-linear-gradient(0deg, #B67B03 0.1em, #DAAF08 0.2em, #FEE9A0 0.3em, #DAAF08 0.4em, #B67B03 0.5em); 
+    -webkit-background-clip: text;
+}
+
+body h3 {
+    font-size: 2em;
+}
+
+body h4 {
+    font-size: 1em;
+}
+
+.image-slide {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 80%;
+    height: 100%; 
+}
+
+.slide {
+    min-width: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slider {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slider {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slider {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slider {
+    transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slider {
+    transform: translateX(-400%);
+}
+
+#slide6:checked ~ .slider {
+    transform: translateX(-500%);
+}
+
+#slide7:checked ~ .slider {
+    transform: translateX(-600%);
+}
+
+.control label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.control label:hover {
+    background-color: #FFD700;
+}
+
+.meat {
+    display: flex;
+}
+
+.part {
+    padding: 0.5em 1em;
+    margin: 20px auto;
+    border: double 5px #FFD700;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+}
